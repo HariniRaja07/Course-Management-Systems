@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — EduTrack</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="auth-shell">
+  <section class="auth-side">
+    <div class="brand"><span class="brand-mark">E</span>EduTrack</div>
+    <div>
+      <h2>Pick up right where you left off.</h2>
+      <p>Your courses, modules and progress are waiting exactly as you left them.</p>
+    </div>
+    <p class="auth-quote">"The dashboard tells me in five seconds what to do next."</p>
+  </section>
+
+  <section class="auth-main">
+    <div class="auth-box">
+      <span class="eyebrow">Welcome back</span>
+      <h1 style="font-size:1.8rem;">Log in to your account</h1>
+      <p class="text-sm">New to EduTrack? <a href="register.html" style="color:var(--amber-dark);font-weight:600;">Create an account</a></p>
+
+      <div id="loginAlert" class="alert alert-success" style="display:none;"></div>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@university.edu" required>
+          <span class="error-text">Enter a valid email address.</span>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Your password" required>
+          <span class="error-text">Enter your password.</span>
+        </div>
+        <div class="flex-between text-sm">
+          <label class="checkbox-row" style="margin:0;"><input type="checkbox" id="remember"> Remember me</label>
+          <a href="forgot-password.html" style="color:var(--amber-dark); font-weight:600;">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mt-24">Log in</button>
+      </form>
+
+      <p class="form-foot-link">Administrator? <a href="admin-dashboard.html">Go to admin dashboard</a></p>
+    </div>
+  </section>
+</div>
+
+<script src="../js/script.js"></script>
+<script>
+  handleDemoSubmit(document.getElementById('loginForm'), 'loginAlert', 'Logged in! Redirecting to your dashboard…', 'student-dashboard.html');
+</script>
+</body>
+</html>

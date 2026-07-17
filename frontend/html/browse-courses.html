@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Browse Courses — EduTrack</title>
+<link rel="stylesheet" href="C:\Users\Raj Coach\Downloads\EduTrack\EduTrack\frontend\css\style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <a href="index.html" class="brand"><span class="brand-mark">E</span>EduTrack</a>
+    <nav class="side-nav">
+      <a href="student-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Dashboard</a>
+      <a href="browse-courses.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Browse Courses</a>
+      <a href="my-courses.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>My Courses</a>
+      <a href="progress.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg>Progress</a>
+      <a href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Notifications</a>
+    </nav>
+    <div class="side-foot">
+      <div class="side-user">
+        <div class="avatar">JL</div>
+        <div><div class="side-user-name">Jordan Lee</div><div class="side-user-role">Student · CS Dept.</div></div>
+      </div>
+      <a href="login.html" class="side-logout">Log out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="page-head">
+      <div>
+        <span class="eyebrow">Catalog</span>
+        <h1>Browse courses</h1>
+        <p>120 courses across programming, web, AI and data.</p>
+      </div>
+    </div>
+
+    <div class="topbar">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="search" placeholder="Search courses…">
+      </div>
+      <select style="max-width:200px;">
+        <option>All categories</option>
+        <option>Programming</option>
+        <option>Web Development</option>
+        <option>Artificial Intelligence</option>
+        <option>Data</option>
+      </select>
+    </div>
+
+    <div class="course-grid">
+      <div class="card course-card">
+        <div class="course-banner cat-programming">Programming</div>
+        <div class="course-card-body">
+          <h3>Full Stack Development</h3>
+          <p class="text-sm mb-0">HTML, CSS, JavaScript, React and Node.js from the ground up.</p>
+          <div class="course-meta"><span>12 weeks</span><span>·</span><span>M. Carter</span></div>
+          <div class="course-tags"><span class="tag">Beginner</span><span class="tag">Certificate</span></div>
+          <div class="course-card-foot">
+            <span class="price">Free</span>
+            <a href="course-details.html" class="btn btn-primary btn-sm">View course</a>
+          </div>
+        </div>
+      </div>
+      <div class="card course-card">
+        <div class="course-banner cat-ai">Artificial Intelligence</div>
+        <div class="course-card-body">
+          <h3>Machine Learning Foundations</h3>
+          <p class="text-sm mb-0">Supervised learning, model evaluation and applied projects.</p>
+          <div class="course-meta"><span>10 weeks</span><span>·</span><span>Dr. R. Iyer</span></div>
+          <div class="course-tags"><span class="tag">Intermediate</span><span class="tag">Certificate</span></div>
+          <div class="course-card-foot">
+            <span class="price">Free</span>
+            <a href="course-details.html" class="btn btn-primary btn-sm">View course</a>
+          </div>
+        </div>
+      </div>
+      <div class="card course-card">
+        <div class="course-banner cat-data">Data</div>
+        <div class="course-card-body">
+          <h3>Python for Data Science</h3>
+          <p class="text-sm mb-0">NumPy, Pandas and visualization for real datasets.</p>
+          <div class="course-meta"><span>8 weeks</span><span>·</span><span>S. Fernandez</span></div>
+          <div class="course-tags"><span class="tag">Beginner</span></div>
+          <div class="course-card-foot">
+            <span class="price">Free</span>
+            <a href="course-details.html" class="btn btn-primary btn-sm">View course</a>
+          </div>
+        </div>
+      </div>
+      <div class="card course-card">
+        <div class="course-banner cat-web">Web Development</div>
+        <div class="course-card-body">
+          <h3>Database Management Systems</h3>
+          <p class="text-sm mb-0">Relational design, SQL, normalization and indexing.</p>
+          <div class="course-meta"><span>6 weeks</span><span>·</span><span>A. Kapoor</span></div>
+          <div class="course-tags"><span class="tag">Beginner</span><span class="tag">Certificate</span></div>
+          <div class="course-card-foot">
+            <span class="price">Free</span>
+            <a href="course-details.html" class="btn btn-primary btn-sm">View course</a>
+          </div>
+        </div>
+      </div>
+      <div class="card course-card">
+        <div class="course-banner cat-programming">Programming</div>
+        <div class="course-card-body">
+          <h3>Advanced JavaScript</h3>
+          <p class="text-sm mb-0">Closures, async patterns, and modern ES2024 features.</p>
+          <div class="course-meta"><span>6 weeks</span><span>·</span><span>M. Carter</span></div>
+          <div class="course-tags"><span class="tag">Advanced</span></div>
+          <div class="course-card-foot">
+            <span class="price">Free</span>
+            <a href="course-details.html" class="btn btn-primary btn-sm">View course</a>
+          </div>
+        </div>
+      </div>
+      <div class="card course-card">
+        <div class="course-banner cat-ai">Artificial Intelligence</div>
+        <div class="course-card-body">
+          <h3>Intro to Neural Networks</h3>
+          <p class="text-sm mb-0">Perceptrons, backprop, and a hands-on image classifier.</p>
+          <div class="course-meta"><span>9 weeks</span><span>·</span><span>Dr. R. Iyer</span></div>
+          <div class="course-tags"><span class="tag">Intermediate</span><span class="tag">Certificate</span></div>
+          <div class="course-card-foot">
+            <span class="price">Free</span>
+            <a href="course-details.html" class="btn btn-primary btn-sm">View course</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="../js/script.js"></script>
+</body>
+</html>

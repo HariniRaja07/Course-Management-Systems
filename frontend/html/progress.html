@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Progress — EduTrack</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <a href="index.html" class="brand"><span class="brand-mark">E</span>EduTrack</a>
+    <nav class="side-nav">
+      <a href="student-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Dashboard</a>
+      <a href="browse-courses.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Browse Courses</a>
+      <a href="my-courses.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>My Courses</a>
+      <a href="progress.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg>Progress</a>
+      <a href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Notifications</a>
+    </nav>
+    <div class="side-foot">
+      <div class="side-user">
+        <div class="avatar">JL</div>
+        <div><div class="side-user-name">Jordan Lee</div><div class="side-user-role">Student · CS Dept.</div></div>
+      </div>
+      <a href="login.html" class="side-logout">Log out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="page-head">
+      <div>
+        <span class="eyebrow">Learning progress</span>
+        <h1>Your progress</h1>
+        <p>Completion percentage and module status across every course.</p>
+      </div>
+    </div>
+
+    <div class="stat-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="card stat-card">
+        <span class="eyebrow">Overall completion</span>
+        <div class="stat-num">63%</div>
+        <div class="stat-sub">Across 4 enrolled courses</div>
+      </div>
+      <div class="card stat-card">
+        <span class="eyebrow">Modules completed</span>
+        <div class="stat-num">13</div>
+        <div class="stat-sub">of 22 total modules</div>
+      </div>
+      <div class="card stat-card">
+        <span class="eyebrow">Certificates</span>
+        <div class="stat-num">1</div>
+        <div class="stat-sub">Database Management Systems</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Course</th><th>Completed</th><th>Pending</th><th>Progress</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Full Stack Development</td>
+              <td>4 modules</td>
+              <td>2 modules</td>
+              <td style="min-width:160px;">
+                <div class="progress-track"><div class="progress-fill" data-value="80" style="width:0"></div></div>
+              </td>
+              <td><span class="badge badge-amber">80%</span></td>
+            </tr>
+            <tr>
+              <td>Python for Data Science</td>
+              <td>3 modules</td>
+              <td>2 modules</td>
+              <td>
+                <div class="progress-track"><div class="progress-fill amber" data-value="60" style="width:0"></div></div>
+              </td>
+              <td><span class="badge badge-amber">60%</span></td>
+            </tr>
+            <tr>
+              <td>Database Management Systems</td>
+              <td>5 modules</td>
+              <td>0 modules</td>
+              <td>
+                <div class="progress-track"><div class="progress-fill" data-value="100" style="width:0"></div></div>
+              </td>
+              <td><span class="badge badge-sage">100%</span></td>
+            </tr>
+            <tr>
+              <td>Intro to Neural Networks</td>
+              <td>1 module</td>
+              <td>6 modules</td>
+              <td>
+                <div class="progress-track"><div class="progress-fill amber" data-value="14" style="width:0"></div></div>
+              </td>
+              <td><span class="badge badge-slate">14%</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="../js/script.js"></script>
+</body>
+</html>

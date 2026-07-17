@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create your account — EduTrack</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="auth-shell">
+  <section class="auth-side">
+    <div class="brand"><span class="brand-mark">E</span>EduTrack</div>
+    <div>
+      <h2>Every module you finish leaves a mark.</h2>
+      <p>Join thousands of students tracking real progress across programming, web, AI and data courses.</p>
+    </div>
+    <p class="auth-quote">"I could finally see how close I was to finishing — that's what got me through the last module."</p>
+  </section>
+
+  <section class="auth-main">
+    <div class="auth-box">
+      <div class="brand" style="display:none;"></div>
+      <span class="eyebrow">Student registration</span>
+      <h1 style="font-size:1.8rem;">Create your account</h1>
+      <p class="text-sm">Already have one? <a href="login.html" style="color:var(--amber-dark);font-weight:600;">Log in</a></p>
+
+      <div id="registerAlert" class="alert alert-success" style="display:none;"></div>
+
+      <form id="registerForm" novalidate>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Jordan Lee" required>
+          <span class="error-text">Enter your full name.</span>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@university.edu" required>
+          <span class="error-text">Enter a valid email address.</span>
+        </div>
+        <div class="field">
+          <label for="department">Department</label>
+          <select id="department" name="department" required>
+            <option value="">Select department</option>
+            <option>Computer Science</option>
+            <option>Information Technology</option>
+            <option>Electronics</option>
+            <option>Mathematics</option>
+            <option>Other</option>
+          </select>
+          <span class="error-text">Select a department.</span>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Min. 8 characters" required>
+            <span class="error-text">Password is required.</span>
+          </div>
+          <div class="field">
+            <label for="confirmPassword">Confirm password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repeat password" required>
+            <span class="error-text">Please confirm your password.</span>
+          </div>
+        </div>
+        <div class="checkbox-row mt-8">
+          <input type="checkbox" id="terms" required>
+          <label for="terms" style="margin:0;">I agree to the Terms of Service and Privacy Policy</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mt-24">Create account</button>
+      </form>
+      <p class="form-foot-link">By registering you'll receive a confirmation email with a verification link.</p>
+    </div>
+  </section>
+</div>
+
+<script src="../js/script.js"></script>
+<script>
+  handleDemoSubmit(document.getElementById('registerForm'), 'registerAlert', 'Account created! Redirecting to login…', 'login.html');
+</script>
+</body>
+</html>

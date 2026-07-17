@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notifications — EduTrack</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <a href="index.html" class="brand"><span class="brand-mark">E</span>EduTrack</a>
+    <nav class="side-nav">
+      <a href="student-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Dashboard</a>
+      <a href="browse-courses.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Browse Courses</a>
+      <a href="my-courses.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>My Courses</a>
+      <a href="progress.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg>Progress</a>
+      <a href="notifications.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Notifications</a>
+    </nav>
+    <div class="side-foot">
+      <div class="side-user">
+        <div class="avatar">JL</div>
+        <div><div class="side-user-name">Jordan Lee</div><div class="side-user-role">Student · CS Dept.</div></div>
+      </div>
+      <a href="login.html" class="side-logout">Log out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="page-head">
+      <div>
+        <span class="eyebrow">Updates</span>
+        <h1>Notifications</h1>
+        <p>Enrollment confirmations, reminders and new course alerts.</p>
+      </div>
+      <button class="btn btn-ghost btn-sm">Mark all as read</button>
+    </div>
+
+    <div class="card">
+      <div class="notif-item notif-unread">
+        <div class="notif-icon" style="background:var(--sage);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <div style="flex:1;">
+          <strong class="text-sm">Enrollment confirmed</strong>
+          <p class="text-sm mb-0">You're enrolled in Full Stack Development. 6 modules are ready to start.</p>
+        </div>
+        <span class="notif-time">2h ago</span>
+      </div>
+      <div class="notif-item notif-unread">
+        <div class="notif-icon" style="background:var(--amber);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div style="flex:1;">
+          <strong class="text-sm">Assignment reminder</strong>
+          <p class="text-sm mb-0">The Module 3 practice exercise for Full Stack Development is due in 2 days.</p>
+        </div>
+        <span class="notif-time">5h ago</span>
+      </div>
+      <div class="notif-item">
+        <div class="notif-icon" style="background:var(--ink);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div style="flex:1;">
+          <strong class="text-sm">New course available</strong>
+          <p class="text-sm mb-0">"Intro to Neural Networks" just opened for enrollment in Artificial Intelligence.</p>
+        </div>
+        <span class="notif-time">1d ago</span>
+      </div>
+      <div class="notif-item">
+        <div class="notif-icon" style="background:var(--sage);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M12 1v6m0 10v6M4.2 4.2l4.2 4.2m7.2 7.2 4.2 4.2M1 12h6m10 0h6M4.2 19.8l4.2-4.2m7.2-7.2 4.2-4.2"/></svg>
+        </div>
+        <div style="flex:1;">
+          <strong class="text-sm">Certificate issued</strong>
+          <p class="text-sm mb-0">You completed Database Management Systems — your certificate is ready.</p>
+        </div>
+        <span class="notif-time">3d ago</span>
+      </div>
+      <div class="notif-item">
+        <div class="notif-icon" style="background:var(--clay);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div style="flex:1;">
+          <strong class="text-sm">Password changed</strong>
+          <p class="text-sm mb-0">Your account password was updated successfully.</p>
+        </div>
+        <span class="notif-time">6d ago</span>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="../js/script.js"></script>
+</body>
+</html>

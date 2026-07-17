@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Course — EduTrack Admin</title>
+<link rel="stylesheet" href="C:\Users\Raj Coach\Downloads\EduTrack\EduTrack\frontend\css\style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar admin">
+    <a href="index.html" class="brand"><span class="brand-mark">E</span>EduTrack <span class="text-sm" style="color:rgba(247,243,234,.5); font-weight:500;">Admin</span></a>
+    <nav class="side-nav">
+      <a href="admin-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Dashboard</a>
+      <a href="courses.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Courses</a>
+      <a href="add-course.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add Course</a>
+      <a href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Notifications</a>
+    </nav>
+    <div class="side-foot">
+      <div class="side-user">
+        <div class="avatar" style="background:var(--clay); color:#fff;">AK</div>
+        <div><div class="side-user-name">A. Kapoor</div><div class="side-user-role">Administrator</div></div>
+      </div>
+      <a href="login.html" class="side-logout">Log out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <a href="courses.html" class="icon-link">&larr; All courses</a>
+    <div class="page-head mt-16">
+      <div>
+        <span class="eyebrow">New course</span>
+        <h1>Add a course</h1>
+        <p>Fill in the course details below. You can add modules after saving.</p>
+      </div>
+    </div>
+
+    <div id="addCourseAlert" class="alert alert-success" style="display:none; max-width:720px;"></div>
+
+    <form id="addCourseForm" class="card card-pad" style="max-width:720px;" novalidate>
+      <div class="field">
+        <label for="courseName">Course name</label>
+        <input type="text" id="courseName" placeholder="e.g. Full Stack Development" required>
+        <span class="error-text">Enter a course name.</span>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="instructor">Instructor</label>
+          <input type="text" id="instructor" placeholder="e.g. M. Carter" required>
+          <span class="error-text">Enter the instructor's name.</span>
+        </div>
+        <div class="field">
+          <label for="duration">Duration (weeks)</label>
+          <input type="number" id="duration" min="1" placeholder="12" required>
+          <span class="error-text">Enter the course duration.</span>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="category">Category</label>
+          <select id="category" required>
+            <option value="">Select category</option>
+            <option>Programming</option>
+            <option>Web Development</option>
+            <option>Artificial Intelligence</option>
+            <option>Data</option>
+          </select>
+          <span class="error-text">Select a category.</span>
+        </div>
+        <div class="field">
+          <label for="level">Level</label>
+          <select id="level">
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="What will students learn in this course?" required></textarea>
+        <span class="error-text">Enter a course description.</span>
+      </div>
+      <div class="field">
+        <label for="thumbnail">Course thumbnail</label>
+        <input type="text" id="thumbnail" placeholder="Paste an image URL (optional)">
+      </div>
+      <div class="flex gap-12 mt-16">
+        <button type="submit" class="btn btn-primary">Save course</button>
+        <a href="courses.html" class="btn btn-ghost">Cancel</a>
+      </div>
+    </form>
+  </main>
+</div>
+<script src="../js/script.js"></script>
+<script>
+  handleDemoSubmit(document.getElementById('addCourseForm'), 'addCourseAlert', 'Course saved! Redirecting to course list…', 'courses.html');
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Stack Development — Course Content — EduTrack</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <a href="index.html" class="brand"><span class="brand-mark">E</span>EduTrack</a>
+    <nav class="side-nav">
+      <a href="student-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Dashboard</a>
+      <a href="browse-courses.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Browse Courses</a>
+      <a href="my-courses.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>My Courses</a>
+      <a href="progress.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg>Progress</a>
+      <a href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Notifications</a>
+    </nav>
+    <div class="side-foot">
+      <div class="side-user">
+        <div class="avatar">JL</div>
+        <div><div class="side-user-name">Jordan Lee</div><div class="side-user-role">Student · CS Dept.</div></div>
+      </div>
+      <a href="login.html" class="side-logout">Log out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <a href="my-courses.html" class="icon-link">&larr; My courses</a>
+    <div class="page-head mt-16">
+      <div>
+        <span class="eyebrow">Programming · 12 weeks</span>
+        <h1>Full Stack Development</h1>
+        <div class="progress-row" style="max-width:320px;"><span>Overall progress</span><span>80%</span></div>
+        <div class="progress-track" style="max-width:320px;"><div class="progress-fill" data-value="80" style="width:0"></div></div>
+      </div>
+      <a href="module.html" class="btn btn-amber">Continue: React for Interfaces</a>
+    </div>
+
+    <div class="card card-pad mt-24">
+      <h2 style="font-size:1.15rem;">Modules</h2>
+      <div class="module-list mt-16">
+        <div class="module-item">
+          <div class="module-check done">&#10003;</div>
+          <div><h4>1. HTML &amp; CSS Fundamentals</h4><span class="text-sm text-slate">4 lessons · Completed</span></div>
+          <span class="dur">2 weeks</span>
+        </div>
+        <div class="module-item">
+          <div class="module-check done">&#10003;</div>
+          <div><h4>2. JavaScript Essentials</h4><span class="text-sm text-slate">5 lessons · Completed</span></div>
+          <span class="dur">2 weeks</span>
+        </div>
+        <div class="module-item active">
+          <div class="module-check current">3</div>
+          <div><h4>3. React for Interfaces</h4><span class="text-sm text-slate">6 lessons · 2 of 6 done</span></div>
+          <a href="module.html" class="btn btn-primary btn-sm">Continue</a>
+        </div>
+        <div class="module-item">
+          <div class="module-check">4</div>
+          <div><h4>4. Node.js &amp; Express APIs</h4><span class="text-sm text-slate">5 lessons · Locked after Module 3</span></div>
+          <span class="dur">2 weeks</span>
+        </div>
+        <div class="module-item">
+          <div class="module-check">5</div>
+          <div><h4>5. MongoDB &amp; Data Modeling</h4><span class="text-sm text-slate">4 lessons</span></div>
+          <span class="dur">2 weeks</span>
+        </div>
+        <div class="module-item">
+          <div class="module-check">6</div>
+          <div><h4>6. Capstone &amp; Deployment</h4><span class="text-sm text-slate">3 lessons</span></div>
+          <span class="dur">1 week</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-pad mt-24">
+      <div class="flex-between">
+        <div>
+          <h2 style="font-size:1.15rem;">Course materials</h2>
+          <p class="text-sm mb-0">Slides, cheat sheets and starter code for this course.</p>
+        </div>
+        <a href="materials.html" class="btn btn-ghost btn-sm">Open materials</a>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="../js/script.js"></script>
+</body>
+</html>

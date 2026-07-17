@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Course — EduTrack Admin</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar admin">
+    <a href="index.html" class="brand"><span class="brand-mark">E</span>EduTrack <span class="text-sm" style="color:rgba(247,243,234,.5); font-weight:500;">Admin</span></a>
+    <nav class="side-nav">
+      <a href="admin-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Dashboard</a>
+      <a href="courses.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Courses</a>
+      <a href="add-course.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add Course</a>
+      <a href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Notifications</a>
+    </nav>
+    <div class="side-foot">
+      <div class="side-user">
+        <div class="avatar" style="background:var(--clay); color:#fff;">AK</div>
+        <div><div class="side-user-name">A. Kapoor</div><div class="side-user-role">Administrator</div></div>
+      </div>
+      <a href="login.html" class="side-logout">Log out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <a href="courses.html" class="icon-link">&larr; All courses</a>
+    <div class="page-head mt-16">
+      <div>
+        <span class="eyebrow">Editing</span>
+        <h1>Full Stack Development</h1>
+        <p>Update course details, or remove it from the catalog.</p>
+      </div>
+      <button class="btn btn-danger btn-sm">Delete course</button>
+    </div>
+
+    <div id="editCourseAlert" class="alert alert-success" style="display:none; max-width:720px;"></div>
+
+    <form id="editCourseForm" class="card card-pad" style="max-width:720px;" novalidate>
+      <div class="field">
+        <label for="courseName">Course name</label>
+        <input type="text" id="courseName" value="Full Stack Development" required>
+        <span class="error-text">Enter a course name.</span>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="instructor">Instructor</label>
+          <input type="text" id="instructor" value="M. Carter" required>
+          <span class="error-text">Enter the instructor's name.</span>
+        </div>
+        <div class="field">
+          <label for="duration">Duration (weeks)</label>
+          <input type="number" id="duration" value="12" required>
+          <span class="error-text">Enter the course duration.</span>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="category">Category</label>
+          <select id="category" required>
+            <option>Programming</option>
+            <option>Web Development</option>
+            <option>Artificial Intelligence</option>
+            <option>Data</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="status">Status</label>
+          <select id="status">
+            <option>Published</option>
+            <option>Draft</option>
+            <option>Archived</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="description">Description</label>
+        <textarea id="description" required>Build complete web applications from scratch — frontend with HTML, CSS and React, backend APIs with Node.js and Express, and a MongoDB database.</textarea>
+        <span class="error-text">Enter a course description.</span>
+      </div>
+
+      <h3 style="font-size:1rem; margin-top:24px;">Modules</h3>
+      <div class="module-list mt-8">
+        <div class="module-item"><div class="module-check">1</div><h4>HTML &amp; CSS Fundamentals</h4><a href="#" class="icon-link">Edit</a></div>
+        <div class="module-item"><div class="module-check">2</div><h4>JavaScript Essentials</h4><a href="#" class="icon-link">Edit</a></div>
+        <div class="module-item"><div class="module-check">3</div><h4>React for Interfaces</h4><a href="#" class="icon-link">Edit</a></div>
+        <div class="module-item"><div class="module-check">4</div><h4>Node.js &amp; Express APIs</h4><a href="#" class="icon-link">Edit</a></div>
+      </div>
+      <button type="button" class="btn btn-ghost btn-sm mt-16">+ Add module</button>
+
+      <div class="flex gap-12 mt-24">
+        <button type="submit" class="btn btn-primary">Save changes</button>
+        <a href="courses.html" class="btn btn-ghost">Cancel</a>
+      </div>
+    </form>
+  </main>
+</div>
+<script src="../js/script.js"></script>
+<script>
+  handleDemoSubmit(document.getElementById('editCourseForm'), 'editCourseAlert', 'Changes saved!', null);
+</script>
+</body>
+</html>

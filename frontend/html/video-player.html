@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video: Props &amp; State — EduTrack</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <a href="index.html" class="brand"><span class="brand-mark">E</span>EduTrack</a>
+    <nav class="side-nav">
+      <a href="student-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Dashboard</a>
+      <a href="browse-courses.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Browse Courses</a>
+      <a href="my-courses.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>My Courses</a>
+      <a href="progress.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg>Progress</a>
+      <a href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Notifications</a>
+    </nav>
+    <div class="side-foot">
+      <div class="side-user">
+        <div class="avatar">JL</div>
+        <div><div class="side-user-name">Jordan Lee</div><div class="side-user-role">Student · CS Dept.</div></div>
+      </div>
+      <a href="login.html" class="side-logout">Log out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <a href="module.html" class="icon-link">&larr; Module 3: React for Interfaces</a>
+    <div class="page-head mt-16">
+      <div>
+        <span class="eyebrow">Lesson video · 14:32</span>
+        <h1>Props &amp; State in React</h1>
+      </div>
+    </div>
+
+    <div class="player-shell">
+      <div>
+        <div class="player-frame">
+          <button class="play-btn" aria-label="Play video">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+          </button>
+        </div>
+        <div class="player-controls">
+          <span class="player-time">04:12</span>
+          <div class="progress-track"><div class="progress-fill amber" style="width:32%"></div></div>
+          <span class="player-time">14:32</span>
+        </div>
+        <div class="card card-pad mt-24">
+          <h3 style="font-size:1rem;">About this lesson</h3>
+          <p class="text-sm mb-0">Learn how data flows down through props and how components manage their own state with <code>useState</code>. Includes a live-coded example building a counter component.</p>
+        </div>
+      </div>
+
+      <aside class="card card-pad">
+        <h3 style="font-size:1rem;">Up next</h3>
+        <div class="module-list mt-16">
+          <div class="module-item active"><div class="module-check current">3</div><h4>Props &amp; state</h4><span class="dur">14:32</span></div>
+          <div class="module-item"><div class="module-check">4</div><h4>Handling events</h4><span class="dur">11:08</span></div>
+          <div class="module-item"><div class="module-check">5</div><h4>Lists &amp; keys</h4><span class="dur">09:45</span></div>
+        </div>
+        <a href="module.html" class="btn btn-primary btn-block mt-16">Back to lesson</a>
+      </aside>
+    </div>
+  </main>
+</div>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Courses — EduTrack Admin</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar admin">
+    <a href="index.html" class="brand"><span class="brand-mark">E</span>EduTrack <span class="text-sm" style="color:rgba(247,243,234,.5); font-weight:500;">Admin</span></a>
+    <nav class="side-nav">
+      <a href="admin-dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Dashboard</a>
+      <a href="courses.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Courses</a>
+      <a href="add-course.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add Course</a>
+      <a href="notifications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Notifications</a>
+    </nav>
+    <div class="side-foot">
+      <div class="side-user">
+        <div class="avatar" style="background:var(--clay); color:#fff;">AK</div>
+        <div><div class="side-user-name">A. Kapoor</div><div class="side-user-role">Administrator</div></div>
+      </div>
+      <a href="login.html" class="side-logout">Log out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="page-head">
+      <div>
+        <span class="eyebrow">124 courses</span>
+        <h1>Manage courses</h1>
+        <p>Add, edit or remove courses across every category.</p>
+      </div>
+      <a href="add-course.html" class="btn btn-primary">+ Add course</a>
+    </div>
+
+    <div class="topbar">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="search" placeholder="Search courses…">
+      </div>
+      <select style="max-width:200px;">
+        <option>All categories</option>
+        <option>Programming</option>
+        <option>Web Development</option>
+        <option>Artificial Intelligence</option>
+        <option>Data</option>
+      </select>
+    </div>
+
+    <div class="card">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Course</th><th>Instructor</th><th>Category</th><th>Duration</th><th>Enrolled</th><th>Status</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Full Stack Development</td>
+              <td>M. Carter</td>
+              <td><span class="tag">Programming</span></td>
+              <td>12 weeks</td>
+              <td>2,340</td>
+              <td><span class="badge badge-sage">Published</span></td>
+              <td class="table-actions"><a href="course-details.html" class="icon-link">View</a><a href="edit-course.html" class="icon-link">Edit</a><a href="#" class="icon-link danger">Delete</a></td>
+            </tr>
+            <tr>
+              <td>Machine Learning Foundations</td>
+              <td>Dr. R. Iyer</td>
+              <td><span class="tag">AI</span></td>
+              <td>10 weeks</td>
+              <td>1,860</td>
+              <td><span class="badge badge-sage">Published</span></td>
+              <td class="table-actions"><a href="course-details.html" class="icon-link">View</a><a href="edit-course.html" class="icon-link">Edit</a><a href="#" class="icon-link danger">Delete</a></td>
+            </tr>
+            <tr>
+              <td>Python for Data Science</td>
+              <td>S. Fernandez</td>
+              <td><span class="tag">Data</span></td>
+              <td>8 weeks</td>
+              <td>2,015</td>
+              <td><span class="badge badge-sage">Published</span></td>
+              <td class="table-actions"><a href="course-details.html" class="icon-link">View</a><a href="edit-course.html" class="icon-link">Edit</a><a href="#" class="icon-link danger">Delete</a></td>
+            </tr>
+            <tr>
+              <td>Database Management Systems</td>
+              <td>A. Kapoor</td>
+              <td><span class="tag">Web</span></td>
+              <td>6 weeks</td>
+              <td>1,410</td>
+              <td><span class="badge badge-sage">Published</span></td>
+              <td class="table-actions"><a href="course-details.html" class="icon-link">View</a><a href="edit-course.html" class="icon-link">Edit</a><a href="#" class="icon-link danger">Delete</a></td>
+            </tr>
+            <tr>
+              <td>Intro to Neural Networks</td>
+              <td>Dr. R. Iyer</td>
+              <td><span class="tag">AI</span></td>
+              <td>9 weeks</td>
+              <td>612</td>
+              <td><span class="badge badge-amber">Draft</span></td>
+              <td class="table-actions"><a href="course-details.html" class="icon-link">View</a><a href="edit-course.html" class="icon-link">Edit</a><a href="#" class="icon-link danger">Delete</a></td>
+            </tr>
+            <tr>
+              <td>Advanced JavaScript</td>
+              <td>M. Carter</td>
+              <td><span class="tag">Programming</span></td>
+              <td>6 weeks</td>
+              <td>988</td>
+              <td><span class="badge badge-sage">Published</span></td>
+              <td class="table-actions"><a href="course-details.html" class="icon-link">View</a><a href="edit-course.html" class="icon-link">Edit</a><a href="#" class="icon-link danger">Delete</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="../js/script.js"></script>
+</body>
+</html>
